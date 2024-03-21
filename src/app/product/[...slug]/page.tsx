@@ -1,6 +1,6 @@
 type DetailProductPageProps = {
   params: {
-    slug: string;
+    slug: string[];
   };
 };
 
@@ -9,7 +9,10 @@ export default function DetailProductPage(props: DetailProductPageProps) {
   console.log(params.slug);
   return (
     <div>
-      <h1>Detail Product Page : {params.slug}</h1>
+      <h1>Detail Product Page </h1>
+      <p>Category : {params.slug[0]}</p>
+      <p>Gender : {params.slug[1]}</p>
+      <p>Product : {params.slug[2]}</p>
     </div>
   );
 }
