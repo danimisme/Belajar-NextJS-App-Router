@@ -1,12 +1,22 @@
-type DetailProductPageProps = {
+type ProductPageProps = {
   params: {
     slug: string[];
   };
 };
 
-export default function DetailProductPage(props: DetailProductPageProps) {
+async function getData() {
+  const res = await fetch("https://fakestoreapi.com/products");
+  if (!res.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return res.json();
+}
+
+export default async function ProductPage(props: ProductPageProps) {
   const { params } = props;
-  console.log(params.slug);
+  const data = await getData();
+  console.log(data);
   return (
     <div>
       <h1>{params.slug ? "Detail Product" : "Product Page"} </h1>
