@@ -4,13 +4,15 @@ const data =
 [
     {
         id: 1,
-        name: "Sepatu Baru",
-        price: 100000
+        title: "Sepatu Baru",
+        price: 100000,
+        image: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/e777c881-5b62-4250-92a6-362967f54cca/air-force-1-07-shoes-NMmm1B.png"
     },
     {
         id: 2,
-        name: "Sepatu Baru Dong",
-        price: 500000
+        title: "Sepatu Baru Dong",
+        price: 500000,
+        image: "https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/0b669fd5-61a7-43db-965b-f60d2dc3ffe5/air-force-1-07-shoes-5fFrTT.png",
     },
 ]
 
